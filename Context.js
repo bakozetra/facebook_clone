@@ -1,16 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useReducer, useState } from 'react'
 import Facebook  from "./facebook.json"
 
 const Context = React.createContext();
 
-function ContextProvider() {
-  const [facebook , setFacebook] = useState();
-
+function ContextProvider(props) {
+  const [facebook , setFacebook] = useState([]);
   function getFacebook () {
     setFacebook(Facebook);
   }
-useEffect(() => {
+console.log(facebook);
+useEffect(() => { 
   getFacebook()
 } , [])
+return (
+  <Context.Provider value ={{facebook , setFacebook}}>
+    {props.children}
+  </Context.Provider>
+)
 }
+
+export {ContextProvider , Context }
 
