@@ -13,7 +13,7 @@ useEffect(() => {
   getFacebook()
 } , [])
 return (
-  <Context.Provider value ={{facebook , setFacebook}}>
+  <Context.Provider value = {{facebook , setFacebook}}>
     {props.children}
   </Context.Provider>
 )

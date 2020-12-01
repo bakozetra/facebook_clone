@@ -1,10 +1,17 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React, { useContext } from 'react'
+import FeedComponent from '../component/FeedComponent';
+import { Context } from '../Context'
 
 function Feed() {
+  const { facebook } = useContext(Context)
   return (
     <div>
-     <h1>Feed</h1>
+        {
+         facebook.map(list => {
+           return (<div key={list.id}> <FeedComponent list={list}/></div>
+           )
+         })
+        }
     </div>
   )
 }

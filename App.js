@@ -11,11 +11,11 @@ function App() {
     <div>
       <Header />
       <Switch>
-      <Route exact path="/">
-          <AddPost />
-        </Route>
-        <Route path="/feed">
+        <Route exact path="/">
           <Feed />
+        </Route>
+        <Route path="/add">
+          <AddPost />
         </Route>
         <Route path="/options">
           <Options />

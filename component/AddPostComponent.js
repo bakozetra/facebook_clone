@@ -1,12 +1,9 @@
 import React from 'react'
 
-function AddPostComponent({list}) {
-
+function AddPostComponent() {
   return (
     <div>
-     <p>{list.username}</p>
-      <p>{list.text}</p>
-      <img src={list.picture}></img>
+      <p>hello</p>
     </div>
   )
 }
