@@ -6,7 +6,10 @@ img {
   flex-direction: column;
 }
 
-div > a img {
+div > a img ,.comment img {
   width: 10%;
   border-radius: 50%;
+}
+.comment {
+  display: flex;
 }

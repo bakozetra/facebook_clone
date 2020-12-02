@@ -2,7 +2,7 @@
   {
     "username": "Sabrina",
     "picture": "https://images.gr-assets.com/books/1513309376l/37533587.jpg",
-    "date": "",
+    "date": "12/02/20",
     "text": "this is good book",
     "image": "https://images.gr-assets.com/books/1513309376l/37533587.jpg",
     "likes": [
@@ -18,9 +18,9 @@
     "comment": [
       {
         "commentId": 1606822922176,
-        " nameuser": "his is good",
-        "dateComment": "",
-        "content": "thia is god"
+        "nameUser": "You",
+        "dateComment": "1/3/20",
+        "content": "Good book"
       }
     ],
     "id": 1606734806009
@@ -44,9 +44,9 @@
     "comment": [
       {
         "commentId": 1606822898497,
-        " nameuser": "his is good",
+        " nameuser": "Me",
         "date": "",
-        "content": "thia is god"
+        "content": "Good to have"
       }
     ],
     "id": 1606734828336
